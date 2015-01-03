@@ -311,7 +311,7 @@
     <string name="user_new_user_name" msgid="426540612051178753">"ಹೊಸ ಬಳಕೆದಾರರು"</string>
     <string name="guest_nickname" msgid="8059989128963789678">"ಅತಿಥಿ"</string>
     <string name="guest_new_guest" msgid="600537543078847803">"ಅತಿಥಿ ಸೇರಿಸಿ"</string>
-    <string name="guest_exit_guest" msgid="7187359342030096885">"ಅತಿಥಿಯನ್ನು ತೆಗೆದುಹಾಕಿ"</string>
+    <string name="guest_exit_guest" msgid="718735934203aa00335">"ಅತಿಥಿಯನ್ನು ತೆಗೆದುಹಾಕಿ"</string>
     <string name="guest_exit_guest_dialog_title" msgid="8480693520521766688">"ಅತಿಥಿಯನ್ನು ತೆಗೆದುಹಾಕುವುದೇ?"</string>
     <string name="guest_exit_guest_dialog_message" msgid="4155503224769676625">"ಈ ಸೆಷನ್‌ನಲ್ಲಿನ ಎಲ್ಲ ಅಪ್ಲಿಕೇಶನ್‌ಗಳು ಮತ್ತು ಡೇಟಾವನ್ನು ಅಳಿಸಲಾಗುತ್ತದೆ."</string>
     <string name="guest_exit_guest_dialog_remove" msgid="7402231963862520531">"ತೆಗೆದುಹಾಕಿ"</string>

@@ -1315,7 +1315,7 @@
     <string name="date_picker_dialog_title" msgid="5879450659453782278">"తేదీని సెట్ చేయండి"</string>
     <string name="date_time_set" msgid="5777075614321087758">"సెట్ చేయి"</string>
     <string name="date_time_done" msgid="2507683751759308828">"పూర్తయింది"</string>
-    <string name="perms_new_perm_prefix" msgid="8257740710754301407"><font size="12" fgcolor="#ff33b5e5">"కొత్తది: "</font></string>
+    <string name="perms_new_perm_prefix" msgid="8257740710754301407"><font size="12" fgcolor="#ffaa0033">"కొత్తది: "</font></string>
     <string name="perms_description_app" msgid="5139836143293299417">"<xliff:g id="APP_NAME">%1$s</xliff:g> ద్వారా అందించబడింది."</string>
     <string name="no_permissions" msgid="7283357728219338112">"అనుమతులు అవసరం లేదు"</string>
     <string name="perm_costs_money" msgid="4902470324142151116">"దీనికి మీకు డబ్బు ఖర్చు కావచ్చు"</string>

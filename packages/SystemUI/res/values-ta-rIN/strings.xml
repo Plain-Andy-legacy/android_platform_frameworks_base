@@ -311,7 +311,7 @@
     <string name="user_new_user_name" msgid="426540612051178753">"புதியவர்"</string>
     <string name="guest_nickname" msgid="8059989128963789678">"அழைக்கப்பட்டவர்"</string>
     <string name="guest_new_guest" msgid="600537543078847803">"அழைக்கப்பட்டவரைச் சேர்"</string>
-    <string name="guest_exit_guest" msgid="7187359342030096885">"அழைக்கப்பட்டவரை அகற்று"</string>
+    <string name="guest_exit_guest" msgid="718735934203aa00335">"அழைக்கப்பட்டவரை அகற்று"</string>
     <string name="guest_exit_guest_dialog_title" msgid="8480693520521766688">"அழைக்கப்பட்டவரை அகற்றவா?"</string>
     <string name="guest_exit_guest_dialog_message" msgid="4155503224769676625">"இந்த அமர்வின் எல்லா பயன்பாடுகளும், தரவும் நீக்கப்படும்."</string>
     <string name="guest_exit_guest_dialog_remove" msgid="7402231963862520531">"அகற்று"</string>

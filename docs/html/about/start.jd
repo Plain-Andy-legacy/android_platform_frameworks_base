@@ -14,8 +14,8 @@ app into the following three sections that represent the general order for app d
 
 
 <style>
-h2.blue{color:#33B5E5}
-h2.blue+hr{background:#33B5E5}
+h2.blue{color:#aa0033}
+h2.blue+hr{background:#aa0033}
 
 h2.orange{color:#FF8800}
 h2.orange+hr{background:#FF8800}

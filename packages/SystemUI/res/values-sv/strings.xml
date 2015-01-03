@@ -311,7 +311,7 @@
     <string name="user_new_user_name" msgid="426540612051178753">"Ny användare"</string>
     <string name="guest_nickname" msgid="8059989128963789678">"Gäst"</string>
     <string name="guest_new_guest" msgid="600537543078847803">"Lägg till gäst"</string>
-    <string name="guest_exit_guest" msgid="7187359342030096885">"Ta bort gäst"</string>
+    <string name="guest_exit_guest" msgid="718735934203aa00335">"Ta bort gäst"</string>
     <string name="guest_exit_guest_dialog_title" msgid="8480693520521766688">"Vill du ta bort gästen?"</string>
     <string name="guest_exit_guest_dialog_message" msgid="4155503224769676625">"Alla appar och data i denna session kommer att raderas."</string>
     <string name="guest_exit_guest_dialog_remove" msgid="7402231963862520531">"Ta bort"</string>

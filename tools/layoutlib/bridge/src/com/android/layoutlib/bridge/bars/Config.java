@@ -105,7 +105,7 @@ public class Config {
             return BLACK;
         } else if (platformVersion < KITKAT) {
             // Honeycomb to JB-mr2: Holo blue light.
-            return 0xff33b5e5;
+            return 0xffaa0033;
         }
         // Should never happen.
         return WHITE;

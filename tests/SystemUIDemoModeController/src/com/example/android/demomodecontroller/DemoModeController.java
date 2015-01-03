@@ -56,7 +56,7 @@ public class DemoModeController extends Activity implements OnTouchListener {
                 | WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
         getActionBar().hide();
         mContent = new View(mContext);
-        mContent.setBackgroundColor(0xff33b5e5);
+        mContent.setBackgroundColor(0xffaa0033);
         mContent.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
                 | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
                 | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);

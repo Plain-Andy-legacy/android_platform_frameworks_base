@@ -313,7 +313,7 @@
     <string name="user_new_user_name" msgid="426540612051178753">"Nouvel utilisateur"</string>
     <string name="guest_nickname" msgid="8059989128963789678">"Invité"</string>
     <string name="guest_new_guest" msgid="600537543078847803">"Ajouter un invité"</string>
-    <string name="guest_exit_guest" msgid="7187359342030096885">"Supprimer l\'invité"</string>
+    <string name="guest_exit_guest" msgid="718735934203aa00335">"Supprimer l\'invité"</string>
     <string name="guest_exit_guest_dialog_title" msgid="8480693520521766688">"Supprimer l\'invité ?"</string>
     <string name="guest_exit_guest_dialog_message" msgid="4155503224769676625">"Toutes les applications et les données de cette session seront supprimées."</string>
     <string name="guest_exit_guest_dialog_remove" msgid="7402231963862520531">"Supprimer"</string>

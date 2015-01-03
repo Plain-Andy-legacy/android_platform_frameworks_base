@@ -93,7 +93,7 @@ between visual components. Note that red and green may be indistinguishable to c
 
     <div class="color-row-container">
       <ul class="color-row">
-        <li><span>#33b5e5</span></li>
+        <li><span>#aa0033</span></li>
         <li><span>#aa66cc</span></li>
         <li><span>#99cc00</span></li>
         <li><span>#ffbb33</span></li>

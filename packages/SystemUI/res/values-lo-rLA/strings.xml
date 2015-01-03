@@ -311,7 +311,7 @@
     <string name="user_new_user_name" msgid="426540612051178753">"ຜູ່ໃຊ້ໃໝ່"</string>
     <string name="guest_nickname" msgid="8059989128963789678">"ແຂກ"</string>
     <string name="guest_new_guest" msgid="600537543078847803">"ເພີ່ມແຂກ"</string>
-    <string name="guest_exit_guest" msgid="7187359342030096885">"​ລຶບ​ແຂກ"</string>
+    <string name="guest_exit_guest" msgid="718735934203aa00335">"​ລຶບ​ແຂກ"</string>
     <string name="guest_exit_guest_dialog_title" msgid="8480693520521766688">"ລຶບ​ແຂກ​ບໍ?"</string>
     <string name="guest_exit_guest_dialog_message" msgid="4155503224769676625">"ແອັບຯ​ແລະ​ຂໍ້​ມູນ​ທັງ​ໝົດ​ໃນ​ເຊດ​ຊັນ​ນີ້​ຈະ​ຖືກ​ລຶບ​ອອກ."</string>
     <string name="guest_exit_guest_dialog_remove" msgid="7402231963862520531">"ລຶບ​"</string>

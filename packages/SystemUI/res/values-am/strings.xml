@@ -311,7 +311,7 @@
     <string name="user_new_user_name" msgid="426540612051178753">"አዲስ ተጠቃሚ"</string>
     <string name="guest_nickname" msgid="8059989128963789678">"እንግዳ"</string>
     <string name="guest_new_guest" msgid="600537543078847803">"እንግዳ አክል"</string>
-    <string name="guest_exit_guest" msgid="7187359342030096885">"እንግዳ አስወግድ"</string>
+    <string name="guest_exit_guest" msgid="718735934203aa00335">"እንግዳ አስወግድ"</string>
     <string name="guest_exit_guest_dialog_title" msgid="8480693520521766688">"እንግዳ ይወገድ?"</string>
     <string name="guest_exit_guest_dialog_message" msgid="4155503224769676625">"በዚህ ክፍለ-ጊዜ ውስጥ ያሉ ሁሉም መተግበሪያዎች እና ውሂብ ይሰረዛሉ።"</string>
     <string name="guest_exit_guest_dialog_remove" msgid="7402231963862520531">"አስወግድ"</string>

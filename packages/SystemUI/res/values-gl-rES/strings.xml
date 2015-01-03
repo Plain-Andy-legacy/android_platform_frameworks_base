@@ -313,7 +313,7 @@
     <string name="user_new_user_name" msgid="426540612051178753">"Novo usuario"</string>
     <string name="guest_nickname" msgid="8059989128963789678">"Convidado"</string>
     <string name="guest_new_guest" msgid="600537543078847803">"Engadir invitado"</string>
-    <string name="guest_exit_guest" msgid="7187359342030096885">"Eliminar invitado"</string>
+    <string name="guest_exit_guest" msgid="718735934203aa00335">"Eliminar invitado"</string>
     <string name="guest_exit_guest_dialog_title" msgid="8480693520521766688">"Queres eliminar o invitado?"</string>
     <string name="guest_exit_guest_dialog_message" msgid="4155503224769676625">"Eliminaranse todas as aplicacións e datos desta sesión."</string>
     <string name="guest_exit_guest_dialog_remove" msgid="7402231963862520531">"Eliminar"</string>

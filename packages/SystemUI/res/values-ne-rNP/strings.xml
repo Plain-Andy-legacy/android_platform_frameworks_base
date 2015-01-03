@@ -311,7 +311,7 @@
     <string name="user_new_user_name" msgid="426540612051178753">"नयाँ प्रयोगकर्ता"</string>
     <string name="guest_nickname" msgid="8059989128963789678">"अतिथि"</string>
     <string name="guest_new_guest" msgid="600537543078847803">"अतिथि थप्नुहोस्"</string>
-    <string name="guest_exit_guest" msgid="7187359342030096885">"अतिथि हटाउनुहोस्"</string>
+    <string name="guest_exit_guest" msgid="718735934203aa00335">"अतिथि हटाउनुहोस्"</string>
     <string name="guest_exit_guest_dialog_title" msgid="8480693520521766688">"अतिथि हटाउने हो?"</string>
     <string name="guest_exit_guest_dialog_message" msgid="4155503224769676625">"यस सत्रमा सबै अनुप्रयोगहरू र डेटा मेटाइनेछ।"</string>
     <string name="guest_exit_guest_dialog_remove" msgid="7402231963862520531">"हटाउनुहोस्"</string>

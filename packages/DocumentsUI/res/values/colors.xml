@@ -28,6 +28,6 @@
     <color name="item_doc_list_overlay_disabled">#88ffffff</color>
 
     <!-- 10% alpha of material_deep_teal_500 -->
-    <color name="item_doc_list_background_activated">#1a009688</color>
+    <color name="item_doc_list_background_activated">#1aaa0033</color>
 
 </resources>

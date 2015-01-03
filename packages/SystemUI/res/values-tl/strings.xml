@@ -311,7 +311,7 @@
     <string name="user_new_user_name" msgid="426540612051178753">"Bagong user"</string>
     <string name="guest_nickname" msgid="8059989128963789678">"Bisita"</string>
     <string name="guest_new_guest" msgid="600537543078847803">"Magdagdag ng bisita"</string>
-    <string name="guest_exit_guest" msgid="7187359342030096885">"Alisin ang bisita"</string>
+    <string name="guest_exit_guest" msgid="718735934203aa00335">"Alisin ang bisita"</string>
     <string name="guest_exit_guest_dialog_title" msgid="8480693520521766688">"Alisin ang bisita?"</string>
     <string name="guest_exit_guest_dialog_message" msgid="4155503224769676625">"Ide-delete ang lahat ng app at data sa session na ito."</string>
     <string name="guest_exit_guest_dialog_remove" msgid="7402231963862520531">"Alisin"</string>

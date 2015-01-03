@@ -311,7 +311,7 @@
     <string name="user_new_user_name" msgid="426540612051178753">"အသုံးပြုသူ အသစ်"</string>
     <string name="guest_nickname" msgid="8059989128963789678">"ဧည့်သည်"</string>
     <string name="guest_new_guest" msgid="600537543078847803">"ဧည့်သည့်ကို ထည့်ပေးရန်"</string>
-    <string name="guest_exit_guest" msgid="7187359342030096885">"ဧည့်သည်ကို ဖယ်ထုတ်ရန်"</string>
+    <string name="guest_exit_guest" msgid="718735934203aa00335">"ဧည့်သည်ကို ဖယ်ထုတ်ရန်"</string>
     <string name="guest_exit_guest_dialog_title" msgid="8480693520521766688">"ဧည့်သည်ကို ဖယ်ထုတ်လိုက်ရမလား?"</string>
     <string name="guest_exit_guest_dialog_message" msgid="4155503224769676625">"ဒီချိတ်ဆက်မှု ထဲက appများ အားလုံး နှင့် ဒေတာကို ဖျက်ပစ်မည်။"</string>
     <string name="guest_exit_guest_dialog_remove" msgid="7402231963862520531">"ဖယ်ထုတ်ပါ"</string>

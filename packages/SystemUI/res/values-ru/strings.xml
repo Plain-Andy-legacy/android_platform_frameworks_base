@@ -313,7 +313,7 @@
     <string name="user_new_user_name" msgid="426540612051178753">"Новый пользователь"</string>
     <string name="guest_nickname" msgid="8059989128963789678">"Гость"</string>
     <string name="guest_new_guest" msgid="600537543078847803">"Добавить гостя"</string>
-    <string name="guest_exit_guest" msgid="7187359342030096885">"Удалить аккаунт гостя"</string>
+    <string name="guest_exit_guest" msgid="718735934203aa00335">"Удалить аккаунт гостя"</string>
     <string name="guest_exit_guest_dialog_title" msgid="8480693520521766688">"Удалить аккаунт гостя?"</string>
     <string name="guest_exit_guest_dialog_message" msgid="4155503224769676625">"Все приложения и данные этого профиля будут удалены."</string>
     <string name="guest_exit_guest_dialog_remove" msgid="7402231963862520531">"Удалить"</string>

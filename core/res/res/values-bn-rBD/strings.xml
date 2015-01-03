@@ -1315,7 +1315,7 @@
     <string name="date_picker_dialog_title" msgid="5879450659453782278">"তারিখ সেট করুন"</string>
     <string name="date_time_set" msgid="5777075614321087758">"সেট করুন"</string>
     <string name="date_time_done" msgid="2507683751759308828">"সম্পন্ন হয়েছে"</string>
-    <string name="perms_new_perm_prefix" msgid="8257740710754301407"><font size="12" fgcolor="#ff33b5e5">"নতুন: "</font></string>
+    <string name="perms_new_perm_prefix" msgid="8257740710754301407"><font size="12" fgcolor="#ffaa0033">"নতুন: "</font></string>
     <string name="perms_description_app" msgid="5139836143293299417">"<xliff:g id="APP_NAME">%1$s</xliff:g> দ্বারা পরিচালিত৷"</string>
     <string name="no_permissions" msgid="7283357728219338112">"কোনো অনুমতির প্রয়োজন নেই"</string>
     <string name="perm_costs_money" msgid="4902470324142151116">"এর জন্য অর্থপ্রদান করতে হতে পারে"</string>

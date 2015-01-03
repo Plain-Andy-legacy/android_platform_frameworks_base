@@ -311,7 +311,7 @@
     <string name="user_new_user_name" msgid="426540612051178753">"Nýr notandi"</string>
     <string name="guest_nickname" msgid="8059989128963789678">"Gestur"</string>
     <string name="guest_new_guest" msgid="600537543078847803">"Bæta gesti við"</string>
-    <string name="guest_exit_guest" msgid="7187359342030096885">"Fjarlægja gest"</string>
+    <string name="guest_exit_guest" msgid="718735934203aa00335">"Fjarlægja gest"</string>
     <string name="guest_exit_guest_dialog_title" msgid="8480693520521766688">"Fjarlægja gest?"</string>
     <string name="guest_exit_guest_dialog_message" msgid="4155503224769676625">"Öllum forritum og gögnum í þessari lotu verður eytt."</string>
     <string name="guest_exit_guest_dialog_remove" msgid="7402231963862520531">"Fjarlægja"</string>

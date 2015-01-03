@@ -311,7 +311,7 @@
     <string name="user_new_user_name" msgid="426540612051178753">"പുതിയ ഉപയോക്താവ്"</string>
     <string name="guest_nickname" msgid="8059989128963789678">"അതിഥി"</string>
     <string name="guest_new_guest" msgid="600537543078847803">"അതിഥിയെ ചേർക്കുക"</string>
-    <string name="guest_exit_guest" msgid="7187359342030096885">"അതിഥിയെ നീക്കംചെയ്യുക"</string>
+    <string name="guest_exit_guest" msgid="718735934203aa00335">"അതിഥിയെ നീക്കംചെയ്യുക"</string>
     <string name="guest_exit_guest_dialog_title" msgid="8480693520521766688">"അതിഥിയെ നീക്കംചെയ്യണോ?"</string>
     <string name="guest_exit_guest_dialog_message" msgid="4155503224769676625">"ഈ സെഷനിലെ എല്ലാ അപ്ലിക്കേഷനുകളും ഡാറ്റയും ഇല്ലാതാക്കും."</string>
     <string name="guest_exit_guest_dialog_remove" msgid="7402231963862520531">"നീക്കംചെയ്യുക"</string>

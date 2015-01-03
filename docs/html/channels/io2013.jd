@@ -154,7 +154,7 @@ ul.videos span.tag {
 }
 ul.videos span.tag.design {
   background-color:rgba(51, 181, 229, .7);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc33b5e5', endColorstr='#cc33b5e5',GradientType=0 ); /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccaa0033', endColorstr='#ccaa0033',GradientType=0 ); /* IE6-9 */
 }
 ul.videos span.tag.develop {
   background-color:rgba(255, 136, 0, .7);
