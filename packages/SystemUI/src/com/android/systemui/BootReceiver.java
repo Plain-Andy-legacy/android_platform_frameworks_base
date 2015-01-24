@@ -16,25 +16,54 @@
 
 package com.android.systemui;
 
+import android.app.Notification;
+import android.app.Notification.Builder;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.ContentResolver;
+import android.database.ContentObserver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.Drawable;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
+import android.os.SystemProperties;
+import android.os.Vibrator;
 import android.provider.Settings;
 import android.util.Log;
+import android.widget.Toast;
+import android.widget.TextView;
+
 
 /**
  * Performs a number of miscellaneous, non-system-critical actions
  * after the system has finished booting.
  */
 public class BootReceiver extends BroadcastReceiver {
+	    
     private static final String TAG = "SystemUIBootReceiver";
-
+	private static final String MaxKhz =  "Max Khz: ";
+	private static final String MinKhz = "Min Khz: ";
+	private static final String Gov = "Governor: ";
+	private static final String Density = "LCD Density: ";
+	private static final String Scheduler = "IO Scheduler: ";
+	private static final String TCP = "TCP Congestion Control: ";
+	private static final String Cores1 = "Cores 1/2 | ";
+	private static final String Cores2 = "Cores 3/4 | ";
+		
+		
     @Override
     public void onReceive(final Context context, Intent intent) {
+		ContentResolver res = context.getContentResolver();
         try {
             // Start the load average overlay, if activated
-            ContentResolver res = context.getContentResolver();
             if (Settings.Global.getInt(res, Settings.Global.SHOW_PROCESSES, 0) != 0) {
                 Intent loadavg = new Intent(context, com.android.systemui.LoadAverageService.class);
                 context.startService(loadavg);
@@ -42,5 +71,60 @@ public class BootReceiver extends BroadcastReceiver {
         } catch (Exception e) {
             Log.e(TAG, "Can't start load average service", e);
         }
+        int mPlainTweakNotify = Settings.System.getInt(res, Settings.System.PLAIN_TWEAK_NOTIFICATIONS, 0);
+		if (Settings.System.getInt(res, Settings.System.PLAIN_TWEAK_NOTIFICATIONS, 0) != 0) {
+					switch (mPlainTweakNotify) {
+						case 0:
+							break;
+						case 1:
+							ShowNotificationTheRest("scheduler", "customdensity", "tcpcong", context, 1, "mGroup3");
+							CpuNotification(context, 2, "mGroup3");
+							break;
+						case 2:
+							ShowToast(context, Cores1, "gov", "maxkhz", "minkhz" );
+							ShowToast(context, Cores2, "gov2", "maxkhz2", "minkhz2" );
+							ShowToast(context, "Additional Properties", "scheduler", "customdensity", "tcpcong" );
+							break;
+			}
+		}
     }
+        
+    public void ShowNotificationTheRest(String property1, String property2, String property3, Context context, int i, String group ) {
+			Notification.Builder mBuilder = new Notification.Builder(context)
+					.setSmallIcon(R.drawable.ic_settings_plaintweak)
+                    .setAutoCancel(true)
+                    .setContentTitle("Additional properties")
+                    .setContentText("Additional properties")
+					.setStyle(new Notification.InboxStyle()
+					.setBigContentTitle("Plain-Tweak")
+					.addLine(Scheduler+SystemProperties.get(property1))
+					.addLine(Density+SystemProperties.get(property2))
+					.addLine(TCP+SystemProperties.get(property3)));
+            NotificationManager mNotificationManager =
+                (NotificationManager) context.getSystemService(context.NOTIFICATION_SERVICE);
+            mNotificationManager.notify(i, mBuilder.build());
+    }
+    public void CpuNotification(Context context, int i, String group ) {
+			Notification.Builder mBuilder = new Notification.Builder(context)
+					.setSmallIcon(R.drawable.ic_settings_plaintweak)
+                    .setAutoCancel(true)
+                    .setContentTitle("Plain-Tweak")
+                    .setContentText("Configuration properties")
+					.setStyle(new Notification.InboxStyle()					
+					.setBigContentTitle("Plain-Tweak")
+					.addLine(Cores1+Gov+SystemProperties.get("gov"))
+					.addLine(Cores1+MaxKhz+SystemProperties.get("maxkhz"))
+					.addLine(Cores1+MinKhz+SystemProperties.get("minkhz"))
+					.addLine(Cores2+Gov+SystemProperties.get("gov2"))
+					.addLine(Cores2+MaxKhz+SystemProperties.get("maxkhz2"))
+					.addLine(Cores2+MinKhz+SystemProperties.get("minkhz2")));
+            NotificationManager mNotificationManager =
+                (NotificationManager) context.getSystemService(context.NOTIFICATION_SERVICE);
+            mNotificationManager.notify(i, mBuilder.build());
+    }
+    public void ShowToast(Context context, String title, String property1, String property2, String property3){
+						Toast mShowToast;
+						mShowToast = Toast.makeText(context, title+"\n"+SystemProperties.get(property1)+SystemProperties.get(property2)+SystemProperties.get(property3), 20000);
+						mShowToast.show();
+	}
 }

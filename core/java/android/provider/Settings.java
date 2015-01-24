@@ -1773,7 +1773,7 @@ public final class Settings {
          * ADVANCED_SETTINGS default value.
          * @hide
          */
-        public static final int ADVANCED_SETTINGS_DEFAULT = 0;
+        public static final int ADVANCED_SETTINGS_DEFAULT = 1;
 
         /**
          * @deprecated Use {@link android.provider.Settings.Global#AIRPLANE_MODE_ON} instead
@@ -2576,7 +2576,7 @@ public final class Settings {
          * @hide
          */
         public static final String WIFI_NETWORK_NOTIFICATIONS = "wifi_network_notifications";
-
+        
         /**
          * Whether to play sounds when the keyguard is shown and dismissed.
          * @hide
@@ -2713,6 +2713,15 @@ public final class Settings {
          * @hide
          */
         public static final String EGG_MODE = "egg_mode";
+        
+		/**
+         * Displays a notification containing Plain-Tweak's information
+         * 0 - default (off)
+         * 1 - notification
+         * 2 - toast
+         * @hide
+         */
+        public static final String PLAIN_TWEAK_NOTIFICATIONS = "plain_tweak_notifications";
 
         /**
          * Volume rocker wake
@@ -2730,6 +2739,8 @@ public final class Settings {
          *
          * @hide
          */
+         
+         
         public static final String[] SETTINGS_TO_BACKUP = {
             STAY_ON_WHILE_PLUGGED_IN,   // moved to global
             WIFI_USE_STATIC_IP,
@@ -2785,7 +2796,8 @@ public final class Settings {
             POINTER_SPEED,
             VIBRATE_WHEN_RINGING,
             RINGTONE,
-            NOTIFICATION_SOUND
+            NOTIFICATION_SOUND,
+            PLAIN_TWEAK_NOTIFICATIONS
         };
 
         /**
