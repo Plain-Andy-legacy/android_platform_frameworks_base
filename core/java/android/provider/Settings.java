@@ -2722,6 +2722,16 @@ public final class Settings {
          * @hide
          */
         public static final String PLAIN_TWEAK_NOTIFICATIONS = "plain_tweak_notifications";
+        
+		/**
+         * Displays a notification containing Plain-Tweak's information
+         * 0 - default (off)
+         * 1 - notification
+         * 2 - toast
+         * @hide
+         */
+         
+        public static final String PLAIN_TWEAK_ENABLE = "enable_plaintweak";
 
         /**
          * Volume rocker wake

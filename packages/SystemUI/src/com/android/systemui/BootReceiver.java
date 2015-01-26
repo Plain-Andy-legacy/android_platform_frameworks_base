@@ -62,6 +62,8 @@ public class BootReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(final Context context, Intent intent) {
 		ContentResolver res = context.getContentResolver();
+		String mPlainTweakEnable = Settings.System.getString(res, Settings.System.PLAIN_TWEAK_ENABLE);
+        SystemProperties.set("enable_plaintweak", mPlainTweakEnable);
         try {
             // Start the load average overlay, if activated
             if (Settings.Global.getInt(res, Settings.Global.SHOW_PROCESSES, 0) != 0) {
@@ -71,53 +73,63 @@ public class BootReceiver extends BroadcastReceiver {
         } catch (Exception e) {
             Log.e(TAG, "Can't start load average service", e);
         }
-        int mPlainTweakNotify = Settings.System.getInt(res, Settings.System.PLAIN_TWEAK_NOTIFICATIONS, 0);
-		if (Settings.System.getInt(res, Settings.System.PLAIN_TWEAK_NOTIFICATIONS, 0) != 0) {
-					switch (mPlainTweakNotify) {
-						case 0:
-							break;
-						case 1:
-							ShowNotificationTheRest("scheduler", "customdensity", "tcpcong", context, 1, "mGroup3");
-							CpuNotification(context, 2, "mGroup3");
-							break;
-						case 2:
-							ShowToast(context, Cores1, "gov", "maxkhz", "minkhz" );
-							ShowToast(context, Cores2, "gov2", "maxkhz2", "minkhz2" );
-							ShowToast(context, "Additional Properties", "scheduler", "customdensity", "tcpcong" );
-							break;
+        if ("android.intent.action.BOOT_COMPLETED".equals(intent.getAction())){
+			int mPlainTweakNotify = Settings.System.getInt(res, Settings.System.PLAIN_TWEAK_NOTIFICATIONS, 0);
+			if (Settings.System.getInt(res, Settings.System.PLAIN_TWEAK_NOTIFICATIONS, 0) != 0) {
+						switch (mPlainTweakNotify) {
+							case 0:
+								break;
+							case 1:
+								ShowNotificationTheRest("scheduler", "customdensity", "tcpcong", context, 1, "mGroup3");
+								CpuNotification(context, 2, "mGroup3");							        
+								break;
+							case 2:
+								ShowToast(context, Cores1, "gov", "maxkhz", "minkhz" );
+								ShowToast(context, Cores2, "gov2", "maxkhz2", "minkhz2" );
+								ShowToast(context, "Additional Properties", "scheduler", "customdensity", "tcpcong" );
+								break;
+				}
 			}
 		}
     }
         
     public void ShowNotificationTheRest(String property1, String property2, String property3, Context context, int i, String group ) {
+			Intent newintent = new Intent();
+			newintent.setClassName("com.android.settings", "com.android.settings.Settings$PlainTweakInfo");
+			PendingIntent contentIntent = PendingIntent.getActivity(context, 0, newintent, PendingIntent.FLAG_ONE_SHOT);
 			Notification.Builder mBuilder = new Notification.Builder(context)
 					.setSmallIcon(R.drawable.ic_settings_plaintweak)
                     .setAutoCancel(true)
                     .setContentTitle("Additional properties")
                     .setContentText("Additional properties")
 					.setStyle(new Notification.InboxStyle()
-					.setBigContentTitle("Plain-Tweak")
-					.addLine(Scheduler+SystemProperties.get(property1))
-					.addLine(Density+SystemProperties.get(property2))
-					.addLine(TCP+SystemProperties.get(property3)));
+					.setBigContentTitle("Plain-Tweak Custom Values")
+					.addLine(Scheduler+SystemProperties.get(property1, "Unset"))
+					.addLine(Density+SystemProperties.get(property2, "Unset"))
+					.addLine(TCP+SystemProperties.get(property3, "Unset")))
+					.setContentIntent(contentIntent);
             NotificationManager mNotificationManager =
                 (NotificationManager) context.getSystemService(context.NOTIFICATION_SERVICE);
             mNotificationManager.notify(i, mBuilder.build());
     }
     public void CpuNotification(Context context, int i, String group ) {
+			Intent newintent = new Intent();
+			newintent.setClassName("com.android.settings", "com.android.settings.Settings$PlainTweakInfo");
+			PendingIntent contentIntent = PendingIntent.getActivity(context, 0, newintent, PendingIntent.FLAG_ONE_SHOT);
 			Notification.Builder mBuilder = new Notification.Builder(context)
 					.setSmallIcon(R.drawable.ic_settings_plaintweak)
                     .setAutoCancel(true)
                     .setContentTitle("Plain-Tweak")
                     .setContentText("Configuration properties")
 					.setStyle(new Notification.InboxStyle()					
-					.setBigContentTitle("Plain-Tweak")
-					.addLine(Cores1+Gov+SystemProperties.get("gov"))
-					.addLine(Cores1+MaxKhz+SystemProperties.get("maxkhz"))
-					.addLine(Cores1+MinKhz+SystemProperties.get("minkhz"))
-					.addLine(Cores2+Gov+SystemProperties.get("gov2"))
-					.addLine(Cores2+MaxKhz+SystemProperties.get("maxkhz2"))
-					.addLine(Cores2+MinKhz+SystemProperties.get("minkhz2")));
+					.setBigContentTitle("Plain-Tweak Custom Values")
+					.addLine(Cores1+Gov+SystemProperties.get("gov", "Unset"))
+					.addLine(Cores1+MaxKhz+SystemProperties.get("maxkhz", "Unset"))
+					.addLine(Cores1+MinKhz+SystemProperties.get("minkhz", "Unset"))
+					.addLine(Cores2+Gov+SystemProperties.get("gov2", "Unset"))
+					.addLine(Cores2+MaxKhz+SystemProperties.get("maxkhz2", "Unset"))
+					.addLine(Cores2+MinKhz+SystemProperties.get("minkhz2", "Unset")))
+					.setContentIntent(contentIntent);
             NotificationManager mNotificationManager =
                 (NotificationManager) context.getSystemService(context.NOTIFICATION_SERVICE);
             mNotificationManager.notify(i, mBuilder.build());
