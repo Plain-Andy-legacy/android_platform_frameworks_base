@@ -62,8 +62,6 @@ public class BootReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(final Context context, Intent intent) {
 		ContentResolver res = context.getContentResolver();
-		String mPlainTweakEnable = Settings.System.getString(res, Settings.System.PLAIN_TWEAK_ENABLE);
-        SystemProperties.set("enable_plaintweak", mPlainTweakEnable);
         try {
             // Start the load average overlay, if activated
             if (Settings.Global.getInt(res, Settings.Global.SHOW_PROCESSES, 0) != 0) {
